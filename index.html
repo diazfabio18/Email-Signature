@@ -9,7 +9,7 @@
     
 
 <div style="border: 1px solid rgba(37, 201, 255,.5); display: inline-block; border-radius: 3px;">
-<table style="font-family: arial; height:90px; border-collapse: collapse; background: white;border: 1px solid rgba(37, 201, 255,.5);">
+<table style="font-family: arial; height:90px; border-collapse: collapse; background: rgba(56,113,207,0.9);border: 1px solid rgba(37, 201, 255,.5);">
   <tr>
     <td style="padding: 7px">
       <img src="https://scontent.faep14-2.fna.fbcdn.net/v/t1.0-9/110199056_3106913472727577_1783341258461853661_n.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=BsRQCNPaJmsAX9XECdQ&_nc_ht=scontent.faep14-2.fna&oh=752b0a2af7a239292eb4b81054e67804&oe=5F37BCB2" 
@@ -20,17 +20,49 @@
       <div style="width: 5px; height: 80px; background:#75c8fd; float: right;">
     </td>
     <td style="vertical-align:top; padding:7px 14px 7px 3px">
-      <strong style="margin: 0; font-size:17px; color: rgba(40, 45, 49,.9); line-height: 24px; height: 24px; display:block">Fabio Leonel Diaz</strong>
-      <p style='font-size:12px; margin: 0px 0 6px; height: 30px'>
-        <span style="margin: 0; color: #666">Backend Developer</span>
+      <strong style="margin: 0; font-size:17px; color: white; line-height: 24px; height: 24px; display:block">Fabio Leonel Diaz</strong>
+      <p style="font-size:12px; margin: 0px 0 6px; height: 30px;">
+        <span style="margin: 0; color: #ffdd32">Backend Developer</span>
         <br>
-        <a href='https://www.instagram.com/fyluj_electronic/' style="color: #25C9FF; font-weight: bold">Fyluj</a>
+        <a href='https://www.instagram.com/fyluj_electronic/' style="color: white; font-weight: bold">Fyluj</a>
       </p>
       <div id="sociales" ></div>
     </td>
   </tr>
 </table>
 </div>
+
+<script>
+    let socials = {
+  facebook: {
+    url: 'https://www.instagram.com/fyluj_electronic/',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+  } ,
+  youtube: {
+    url: 'https://www.instagram.com/fyluj_electronic/',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+  },
+  twitter: { 
+    url: 'https://www.instagram.com/fyluj_electronic/',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+  },
+  linkedin: {
+    url: 'https://www.instagram.com/fyluj_electronic/',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+  },
+  github: {
+    url: 'https://www.instagram.com/fyluj_electronic/',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+  } 
+    };
+
+let socialIcons = '';
+for(let social in socials) {
+  socialIcons += `<a href="${socials[social].url}" style="display:inline-block;margin-right:6px"><img src="${socials[social].icon}" width="20" style="display: block;"/></a>`
+}
+
+document.getElementById('sociales').innerHTML = socialIcons;
+</script>
 
 </body>
 </html>
