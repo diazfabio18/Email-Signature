@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
       <p style="font-size:12px; margin: 0px 0 6px; height: 30px;">
         <span style="margin: 0; color: #ffdd32">Backend Developer Jr ... way to Full-Stack!</span>
         <br>
-        <a href='https://www.instagram.com/fyluj_electronic/' style="color: white; font-weight: bold">@Fyluj_Electronic</a>
+        <a href='https://www.instagram.com/fyluj_electronic/' style="color: white; font-weight: bold"> La creatividad resumida en @Fyluj_Electronic</a>
       </p>
       <div id="sociales" ></div>
     </td>
@@ -34,34 +34,26 @@
 
 <script>
     let socials = {
-  facebook: {
-    url: 'https://www.facebook.com/fl.diaz.3',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
-  } ,
-  youtube: {
-    url: 'https://www.instagram.com/fyluj_electronic/',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
-  },
-  twitter: { 
-    url: 'https://www.instagram.com/fyluj_electronic/',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
-  },
-  linkedin: {
-    url: 'https://www.linkedin.com/in/diazfabio/',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
-  },
-  github: {
-    url: 'https://github.com/diazfabio18',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
-  } 
-    };
+    facebook: {
+      url: 'https://www.facebook.com/fl.diaz.3',
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+    } ,
+    linkedin: {
+      url: 'https://www.linkedin.com/in/diazfabio/',
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+    },
+    github: {
+      url: 'https://github.com/diazfabio18',
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+    } 
+      };
 
-let socialIcons = '';
-for(let social in socials) {
-  socialIcons += `<a href="${socials[social].url}" style="display:inline-block;margin-right:6px"><img src="${socials[social].icon}" width="20" style="display: block;"/></a>`
-}
+    let socialIcons = '';
+    for(let social in socials) {
+      socialIcons += `<a href="${socials[social].url}" style="display:inline-block;margin-right:6px"><img src="${socials[social].icon}" width="20" style="display: block;"/></a>`
+    }
 
-document.getElementById('sociales').innerHTML = socialIcons;
+    document.getElementById('sociales').innerHTML = socialIcons;
 </script>
 
 </body>
