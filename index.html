@@ -17,14 +17,14 @@
          width="80" 
          height="80" 
          style="display:block; border-radius: 50%; margin-right: 7px; float: left;"/>
-      <div style="width: 5px; height: 80px; background:#75c8fd; float: right;">
     </td>
+    <!-- <td style="width: 5px; height: 80px; background:#75c8fd; float: right;"></td> -->
     <td style="vertical-align:top; padding:7px 14px 7px 3px">
-      <strong style="margin: 0; font-size:17px; color: white; line-height: 24px; height: 24px; display:block">Fabio Leonel Diaz</strong>
-      <p style="font-size:12px; margin: 0px 0 6px; height: 30px;">
+      <strong style="margin: 0; font-size:17px; color: white; line-height: 24px; height: 24px; display:block">Fabio Leonel Díaz</strong>
+      <p style="font-size:13px; margin: 0px 0 6px; height: 30px;">
         <span style="margin: 0; color: #ffdd32">Backend Developer Jr ... way to Full-Stack!</span>
         <br>
-        <a href='https://www.instagram.com/fyluj_electronic/' style="color: white; font-weight: bold"> La creatividad resumida en @Fyluj_Electronic</a>
+        <span style="color: white;">Follow me in </span><a href='https://www.instagram.com/fyluj_electronic/' style="color: whitesmoke; font-weight: bold; text-decoration: none;">@Fyluj_Electronic</a>
       </p>
       <div id="sociales" ></div>
     </td>
@@ -45,12 +45,16 @@
     github: {
       url: 'https://github.com/diazfabio18',
       icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
+    },
+    instagram: {
+      url: 'https://instagram.com/fl_diaz',
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHC1JS1S9yo-b90RiKorVLamF4dEowehBfrQ&usqp=CAU'
     } 
       };
 
     let socialIcons = '';
     for(let social in socials) {
-      socialIcons += `<a href="${socials[social].url}" style="display:inline-block;margin-right:6px"><img src="${socials[social].icon}" width="20" style="display: block;"/></a>`
+      socialIcons += `<a href="${socials[social].url}" style="display:inline-block;margin-right:6px;"><img src="${socials[social].icon}" width="25" style="display: block;margin-left:15px;"/></a>`
     }
 
     document.getElementById('sociales').innerHTML = socialIcons;
