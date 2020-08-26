@@ -32,9 +32,9 @@ How copy to Email?
 
 ## Tools
 
-- Old HTML
-- Css incrusted in tags Html
+- HTML (Tag Table used)
+- Css (incrusted at Html)
 - Vainilla Javascript
-- CSS Gradient
+
 
 
