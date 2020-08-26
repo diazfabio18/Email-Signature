@@ -2,6 +2,8 @@
 
 A customize signature free to use in email messages like outlook, gmail, etc.
 
+![email](https://www.customerthermometer.com/img/Email-Signature-Templates-for-2019-Blog-Header.png)
+
 How does it work?
 ==============================
 
@@ -33,5 +35,6 @@ How copy to Email?
 - Old HTML
 - Css incrusted in tags Html
 - Vainilla Javascript
+- CSS Gradient
 
 
