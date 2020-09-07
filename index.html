@@ -38,7 +38,7 @@
         </p>
 
         <!-- link to social media inyected by javascript-->
-        <div id="sociales" style="margin-top: 20px;"></div>
+        <div id="sociales" style="margin-top: 30px;"></div>
       </td>
 
     </tr>
@@ -57,7 +57,7 @@
     },
     github: {
       url: 'https://github.com/diazfabio18',
-      icon: 'https://raw.githubusercontent.com/diazfabio18/Email-Signature/master/icons/icon_github.png'
+      icon: 'https://raw.githubusercontent.com/diazfabio18/Email-Signature/master/icons/github.png'
     },
     instagram: {
       url: 'https://instagram.com/fl_diaz',
@@ -68,7 +68,7 @@
     let socialIcons = '';
     //insertion icons
     for(let social in socials) {
-      socialIcons += `<a href="${socials[social].url}" style="display:inline-block;"><img src="${socials[social].icon}" width="35px" style="display: block;margin-left:15px;padding-right:4px;"/></a>`
+      socialIcons += `<a href="${socials[social].url}" style="display:inline-block; margin-left: 20px;"><img src="${socials[social].icon}" width="35px" style="display: block;"/></a>`
     }
 
     document.getElementById('sociales').innerHTML = socialIcons;
